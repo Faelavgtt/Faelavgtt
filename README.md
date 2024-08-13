@@ -5,4 +5,4 @@ Work with Design🖤
 
 （￣へ￣）
 
-OMAGAaaa
+OMAGA
