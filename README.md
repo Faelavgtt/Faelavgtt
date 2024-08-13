@@ -4,3 +4,5 @@ Graduated in Advanced English👩‍🎓
 Work with Design🖤
 
 （￣へ￣）
+
+OMAGA
