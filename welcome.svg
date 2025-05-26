@@ -114,7 +114,7 @@
         line-height: 26px;
         color: var(--color-main);
         font-weight: 700;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Poppins", sans-serif;
       }
       ul li {
         display: flex;
@@ -212,9 +212,6 @@
         <section class='items'>
           <ul>
             <li>Designer &#38; Developer</li>
-          </ul>
-          <ul>
-            <li>at <a href="https://pragmaticpineapple.com">Pragmatic Pineapple</a></li>
           </ul>
           <ul>
             <li><a href="mailto:nikolaseap@gmail.com" role="button"><span class='hi'>👋</span></a></li>
