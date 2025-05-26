@@ -48,13 +48,6 @@
         justify-content: center;
         align-items: center;
       }
-      .lilita-one-regular {
-        font-family: "Lilita One", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        }
-
-
       h1 {
         font-size: 3.5rem;
         font-weight: 800;
@@ -124,7 +117,7 @@
         line-height: 26px;
         color: var(--color-main);
         font-weight: 700;
-        font-family: "Poppins", sans-serif;
+        font-family: "Lilita One", sans-serif;
       }
       ul li {
         display: flex;
