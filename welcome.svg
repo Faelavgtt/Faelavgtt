@@ -1,6 +1,6 @@
 <svg fill="none" viewBox="0 0 600 400" width="600" height="400" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
-  <div xmlns="http://www.w3.org/1999/xhtml">
+  <div xmlns="http://www.w3.org/1999/xhtml">  
     <style>
       * {
         margin: 0;
@@ -22,7 +22,6 @@
 
         height: 400px;
         width: 100%;
-        text-transform: uppercase;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -45,16 +44,15 @@
         align-items: center;
       }
       h1 {
-        font-size: 3.5rem;
-        font-weight: 800;
-        font-family: 'Consolas', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 400;
+        font-family: "Segoe Script", cursive;
         text-align: center;
       }
       h1 a {
         display: block;
       }
       h1 a span {
-        overflow: hidden;
         transition: transform 0.25s cubic-bezier(0.5, 0, 0.25, 1.25);
         display: block;
       }
@@ -68,25 +66,7 @@
       }
       h1 a span:nth-child(1) em {
         margin-top: 30px;
-        line-height: 0rem;
         margin-bottom: -10px;
-      }
-      h1 a span:nth-child(2) {
-        color: var(--color-primary);
-        margin-bottom: 6px;
-        animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.2) -0.9s 1;
-      }
-      h1 a span:nth-child(2) em {
-        margin-top: -6px;
-        line-height: 1rem;
-      }
-      h1 a span:nth-child(3) {
-        color: var(--color-secondary);
-        animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.1) -0.8s 1;
-      }
-      h1 a span:nth-child(3) em {
-        margin-top: -36px;
-        line-height: 3rem;
       }
       h1 a:hover span,
       h1 a:focus span {
@@ -112,8 +92,8 @@
         font-size: 16px;
         line-height: 26px;
         color: var(--color-main);
-        font-weight: 700;
-        font-family: 'Consolas', sans-serif;
+        font-weight: 200;
+        font-family: "Comic Sans MS", cursive;
       }
       ul li {
         display: flex;
@@ -157,9 +137,32 @@
         100% { transform: rotate(0deg); }
       }
 
-      @keyframes intro {
-        0%, 75% { transform: translateX(-100vw); }
-        100% { transform: translateX(0); }
+      @keyframes fadeUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .fade-in {
+        opacity: 0;
+        animation: fadeUp 1s ease-out forwards;
+      }
+      
+      .fade-delay-1 {
+        animation-delay: 0.3s;
+      }
+      
+      .fade-delay-2 {
+        animation-delay: 0.6s;
+      }
+      
+      .fade-delay-3 {
+        animation-delay: 1s;
       }
 
       @keyframes fade {
@@ -192,30 +195,27 @@
           animation: none;
         }
 
-        h1 a span:nth-child(1),
-        h1 a span:nth-child(2),
-        h1 a span:nth-child(3) {
+        h1 a span:nth-child(1), {
           animation: none;
         }
       }
     </style>
     <div class='body'>
       <div class='container'>
-        <h1>
-          <a href="https://github.com/faelavgtt">
-            <span><em>Faela Vergotti</em></span>
-            <span><em>Faela Vergotti</em></span>
-            <span><em>Faela Vergotti</em></span>
-          </a>
-        </h1>
-        <section class='items'>
-          <ul>
-            <li>Designer &#38; Developer</li>
-          </ul>
-          <ul>
-            <li><a href="" role="button"><span class='hi'>👋</span></a></li>
-          </ul>
-        </section>
+        <h1 class="fade-in fade-delay-1">
+      <a href="https://github.com/faelavgtt">
+        <span><em>Rafaela Vergotti</em></span>
+      </a>
+    </h1>
+    
+    <section class='items fade-in fade-delay-2'>
+      <ul>
+        <li>Designer &#38; Developer</li>
+      </ul>
+      <ul class="fade-in fade-delay-3">
+        <li><a href="" role="button"><span class='hi'>👋</span></a></li>
+      </ul>
+    </section>
       </div>
     </div>
   </div>
