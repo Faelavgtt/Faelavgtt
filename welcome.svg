@@ -13,12 +13,12 @@
       }
 
       .body {
-        --color-main: #ff9b71;
-        --color-primary: #ff4444;
-        --color-secondary: #e8e677;
+        --color-main: #F2D7B6;
+        --color-primary: #D94848;
+        --color-secondary: #F28080;
         --color-background: #0d1117;
-        --color-link: #fef29e;
-        --color-link-active: #ff4444;
+        --color-link: #F2B5A7;
+        --color-link-active: #F2D7B6;
 
         height: 400px;
         width: 100%;
@@ -27,10 +27,10 @@
         justify-content: center;
 
         background-image: radial-gradient(var(--color-main), var(--color-primary), var(--color-secondary));
-        animation: border 5s linear infinite;
+        animation: border 4s linear infinite;
         background-size: 200% 200%;
         background-position: 0 0;
-        border: 24px solid;
+        border: 10px solid;
         border-color: var(--color-background);
       }
 
