@@ -14,20 +14,14 @@
 
       .body {
         --color-main: #F2D7B6;
-        --color-primary: #D94848;
-        --color-secondary: #F28080;
         --color-background: #0d1117;
-        --color-link: #F2B5A7;
-        --color-link-active: #F2D7B6;
-
+        
         height: 250px;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
 
-       
-        animation: border 4s linear infinite;
         background-size: 200% 200%;
         background-position: 0 0;
         border: none;
@@ -172,12 +166,9 @@
 
       @media (prefers-color-scheme: light) {
         .body {
-         --color-main: #e04f5f;           
-        --color-primary: #f4a59f;        
-        --color-secondary: #fbc4b4;      
+         --color-main: #e04f5f;                
         --color-background: #ffffff;     
-        --color-link: #d94a4a;           
-        --color-link-active: #a93232;    
+       
         }
       }
 
